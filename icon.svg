@@ -1,16 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- 홀덤 AR 앱 아이콘: 펠트 초록 바탕, 금빛 스페이드, 네 귀의 AR 조준 괄호 -->
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#1c2a4a"/>
-      <stop offset="1" stop-color="#0b0f1a"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a9d63"/>
+      <stop offset="1" stop-color="#0f5a38"/>
     </linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#ffe08a"/>
-      <stop offset="1" stop-color="#d49a1c"/>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.6">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#fff0b3"/>
+      <stop offset="0.45" stop-color="#f5c542"/>
+      <stop offset="1" stop-color="#c8861a"/>
+    </linearGradient>
+    <linearGradient id="goldDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b37a12"/>
+      <stop offset="1" stop-color="#7a4f08"/>
     </linearGradient>
   </defs>
-  <rect width="512" height="512" rx="112" fill="url(#g)"/>
-  <ellipse cx="256" cy="322" rx="176" ry="70" fill="#14724a" stroke="url(#gold)" stroke-width="14"/>
-  <path d="M256 92c38 54 98 84 98 138 0 30-24 52-52 52-18 0-32-8-40-20 4 28 16 46 34 58h-80c18-12 30-30 34-58-8 12-22 20-40 20-28 0-52-22-52-52 0-54 60-84 98-138z" fill="url(#gold)"/>
-  <path d="M112 196l-34-20M400 196l34-20M150 128l-22-30M362 128l22-30" stroke="#38f2ff" stroke-width="12" stroke-linecap="round" opacity=".85"/>
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+  <rect width="512" height="512" rx="116" fill="url(#glow)"/>
+  <!-- 펠트 결(미세한 가로줄) -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="2">
+    <path d="M0 96H512M0 160H512M0 224H512M0 288H512M0 352H512M0 416H512"/>
+  </g>
+  <!-- AR 조준 괄호 -->
+  <g fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round" opacity="0.92">
+    <path d="M84 150V116a32 32 0 0 1 32-32h34"/>
+    <path d="M428 150V116a32 32 0 0 0-32-32h-34"/>
+    <path d="M84 362v34a32 32 0 0 0 32 32h34"/>
+    <path d="M428 362v34a32 32 0 0 1-32 32h-34"/>
+  </g>
+  <!-- 스페이드 그림자 -->
+  <path d="M256 128c42 60 110 94 110 154 0 34-26 58-58 58-20 0-36-9-45-23 4 32 18 52 38 66h-90c20-14 34-34 38-66-9 14-25 23-45 23-32 0-58-24-58-58 0-60 68-94 110-154z" transform="translate(0 10)" fill="#000000" opacity="0.28"/>
+  <!-- 스페이드 -->
+  <path d="M256 128c42 60 110 94 110 154 0 34-26 58-58 58-20 0-36-9-45-23 4 32 18 52 38 66h-90c20-14 34-34 38-66-9 14-25 23-45 23-32 0-58-24-58-58 0-60 68-94 110-154z" fill="url(#gold)" stroke="url(#goldDark)" stroke-width="6" stroke-linejoin="round"/>
+  <!-- 하이라이트 -->
+  <path d="M232 178c-18 26-40 44-54 66" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" opacity="0.55"/>
 </svg>
