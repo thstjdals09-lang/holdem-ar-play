@@ -4,7 +4,7 @@ self.addEventListener('activate', (e) => e.waitUntil(self.clients.claim()));
 self.addEventListener('push', (e) => {
   let d = {};
   try { d = e.data ? e.data.json() : {}; } catch { d = { body: e.data ? e.data.text() : '' }; }
-  e.waitUntil(self.registration.showNotification(d.title || '홀덤 AR', {
+  e.waitUntil(self.registration.showNotification(d.title || '포켓펍', {
     body: d.body || '', icon: './icon-192.png', badge: './icon-192.png', tag: d.tag, data: { url: d.url || './' },
   }));
 });

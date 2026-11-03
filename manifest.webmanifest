@@ -1,15 +1,29 @@
 {
-  "name": "홀덤 AR",
-  "short_name": "홀덤 AR",
-  "description": "폰을 들고 둘러보는 증강현실 홀덤 토너먼트",
+  "name": "포켓펍",
+  "short_name": "포켓펍",
+  "description": "주머니 속 홀덤 펍 — 폰으로 즐기는 AR 홀덤 토너먼트",
   "start_url": "./",
   "display": "fullscreen",
   "orientation": "any",
-  "background_color": "#0b0f1a",
-  "theme_color": "#0b0f1a",
+  "background_color": "#0e0d0c",
+  "theme_color": "#0e0d0c",
   "icons": [
-    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" },
-    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
   ]
 }
